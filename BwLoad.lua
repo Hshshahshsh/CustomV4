@@ -6,6 +6,7 @@ if not table.find(whitelist.normal,lplr.UserId) and not table.find(whitelist.own
 	lplr:Kick("not whitelisted")
 	return
 end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hshshahshsh/CustomV4/main/custom%20commands%20(need%20whitelist).txt"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SomeRandomKid7/CustomV4/main/Chat.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/vodxn/sape/main/Custom/6872274481.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/CustomModules/6872274481.lua"))()
