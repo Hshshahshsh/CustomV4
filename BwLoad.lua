@@ -1,5 +1,6 @@
+-- probably obfuscating the script and adding some new features or something 
 repeat task.wait() until game:IsLoaded()
-local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/SomeRandomKid7/CustomV4/main/Whitelist.lua"))()
+local whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hshshahshsh/CustomV4/main/Whitelist.lua"))()
 local lplr = game:GetService("Players").LocalPlayer
 local repstorage = game:GetService("ReplicatedStorage")
 if not table.find(whitelist.normal,lplr.UserId) and not table.find(whitelist.owners,lplr.UserId) then
