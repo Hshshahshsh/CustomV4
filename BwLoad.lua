@@ -186,6 +186,34 @@ runcode(function()
 	})
 end)
 
+-- hope it works
+runcode(function()
+	local oldsounds = bedwars["GameSound"]
+	local newsounds = bedwars["GameSound"]
+	newsounds.DAMAGE_1 = "rbxassetid://6361963422"
+	newsounds.DAMAGE = "rbxassetid://6361963422"
+	newsounds.DAMAGE_2 = "rbxassetid://6361963422"
+	newsounds.DAMAGE_3 = "rbxassetid://6361963422"
+	newsounds.KILL = "rbxassetid://1053296915"
+	newsounds.STATIC_HIT = "rbxassetid://6361963422"
+	newsounds.UI_CLICK = "rbxassetid://535716488"
+	newsounds.WOOL_BREAK = "rbxassetid://6496157434"
+	local sounds = {["Enabled"] = false}
+	sounds = GuiLibrary["ObjectsThatCanBeSaved"]["RenderWindow"]["Api"].CreateOptionsButton({
+		["Name"] = "Sounds",
+		["HoverText"] = "Redos some sounds.",
+		["Function"] = function(callback)
+			if callback then
+				bedwars["Sound"].GameSound = newsounds
+			else
+				bedwars["Sound"].GameSound = oldsounds
+end
+                end)
+			end
+		end,
+	})
+end)
+
 runcode(function()
 	local GodmodeTest = {["Enabled"] = false}
 	GodmodeTest = GuiLibrary["ObjectsThatCanBeSaved"]["WorldWindow"]["Api"].CreateOptionsButton({
