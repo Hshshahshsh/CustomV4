@@ -9,7 +9,7 @@ if not table.find(whitelist.normal,lplr.UserId) and not table.find(whitelist.own
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SomeRandomKid7/CustomV4/main/Chat.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/CustomModules/6872274481.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 local GuiLibrary  = shared.GuiLibrary
 local KnitClient = debug.getupvalue(require(lplr.PlayerScripts.TS.knit).setup, 6)
 local Client = require(repstorage.TS.remotes).default.Client
