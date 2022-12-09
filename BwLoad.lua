@@ -128,6 +128,19 @@ runcode(function()
 end)
 
 runcode(function()
+    local GliderItemDisabler = {["Enabled"] = false}
+    GliderItemDisabler = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+        ["Name"] = "Auto win by dotgg",
+        ["Function"] = function(callback)
+            if callback then
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/eLeCtRaDoMiNuS/scriptsfrommybasement/main/squadsautowin.lua"))()
+                GliderItemDisabler["ToggleButton"](false)
+            end
+        end,
+    })
+end)
+
+runcode(function()
     local BoostAirJump = {["Enabled"] = false}
     BoostAirJump = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
         ["Name"] = "BoostAirJump",
